@@ -1,3 +1,11 @@
-:root {
-    --bg-color:
+:root{
+    --bg-color: #6673fd;
+    --link-color: #a0ffd1;
+    --link-hover-color: #ff8789;
+}
+
+body{
+    margin: 0;
+    font-family: Georgia, Times, serif;
+    background-color: var(--bg-color);
 }
