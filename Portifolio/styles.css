@@ -134,7 +134,7 @@ a {
 .welcome-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     padding-left: 20vw;
     padding-top: 20vh;
     width: 100%;
