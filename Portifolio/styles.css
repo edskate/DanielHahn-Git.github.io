@@ -104,7 +104,7 @@ a {
 
 /* Welcome section */
 
-.welcome-section {
+/* .welcome-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,7 +129,28 @@ a {
 
 .welcome-section > p {
     text-align: center;
+} */
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20vw;
+    padding-top: 20vh;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(-45deg, #2626e9 0%, #13057f 20% , #090a47 100%);
 }
+
+.welcome-section h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4rem;
+    padding-bottom: 7vh;
+}
+
 
 .welcome-section a {
     color: var(--main-green);
