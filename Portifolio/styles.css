@@ -104,11 +104,14 @@ a {
 .welcome-section {
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background-color: #000;
     background-image: linear-gradient(-45deg, #2626e9 0%, #13057f 20% , #090a47 100%);
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .welcome-section > h1 {
@@ -116,14 +119,11 @@ a {
     font-weight: 700;
     text-align: center;
     font-size: 6rem;
-    margin-top: 7rem;
-    padding: 3em 7rem 10px 7rem;
-    margin-bottom: 7rem;
 }
 
 .welcome-section > p {
     text-align: center;
-    padding: 0.5rem 7rem;
+
 }
 
 .welcome-section a {
@@ -134,4 +134,6 @@ a {
     color: var(--second-green);
 }
 
-
+.welcome-section div {
+    padding: 4%;
+}
