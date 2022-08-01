@@ -134,6 +134,7 @@ a {
     color: var(--second-green);
 }
 
-/* .welcome-section div {
-    padding: 3%;
-} */
+.welcome-section div {
+    padding: 4%;
+}
+
