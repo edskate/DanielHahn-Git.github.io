@@ -142,6 +142,15 @@ a {
 }
 
 .welcome-section div {
-    padding: 3%;
+    height: 3em;
 }
 
+@media (max-width: 500px) {
+    .welcome-section div {
+        height: 0;
+    }
+    .welcome-section h1 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
