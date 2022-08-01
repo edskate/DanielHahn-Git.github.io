@@ -115,13 +115,13 @@ a {
     text-align: center;
     font-size: 6rem;
     margin-top: 7rem;
-    padding-top: 10rem;
+    padding: 10rem 7rem 10px 7rem;
     margin-bottom: 7rem;
 }
 
 .welcome-section > p {
     text-align: center;
-    padding-bottom: 1rem;
+    padding: 0.5rem 7rem;
 }
 
 .welcome-section a {
