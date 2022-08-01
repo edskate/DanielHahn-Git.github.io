@@ -1,8 +1,9 @@
-:root{
+:root {
     --main-white: #f0f0f0;
-    --main-red: #be3144;
-    --main-blue: #45567d;
-    --main-gray: #303841;
+    --main-red: #7f0534;
+    --main-blue: #13057f;
+    --main-green: #057f50;
+    --second-green: #717f05;
 }
 
 /* Base reset */
@@ -11,31 +12,37 @@
     padding: 0;
 }
 
-html{
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
-@media (max-width: 75em){
+@media (max-width: 75em) {
     html {
         font-size: 60%;
     }
 }
 
-@media (max-width: 61.25em){
+@media (max-width: 61.25em) {
     html {
         font-size: 58%;
     }
 }
 
-@media (max-width: 28.75em){
+@media (max-width: 28.75em) {
     html {
         font-size: 55%;
     }
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
@@ -43,23 +50,86 @@ body{
     color: var(--main-white);
 }
 
-h1 {
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+/* nav */
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-green);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-list {
+        margin: 0 1rem;
+    }
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+.nav-list a:hover {
+    background: var(--main-blue);
+}
+
+/* Welcome section */
+
+.welcome-section {
+
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(-45deg, #2626e9 0%, #13057f 20% , #090a47 100%);
+}
+
+.welcome-section > h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-align: center;
     font-size: 6rem;
+    margin-top: 7rem;
+    padding-top: 10rem;
+    margin-bottom: 7rem;
 }
 
-ul{
-    list-style: none;
+.welcome-section > p {
+    text-align: center;
+    padding-bottom: 1rem;
 }
 
-a{
-    text-decoration: none;
-    color: var(--link-color);
+.welcome-section a {
+    color: var(--main-green);
 }
 
-
-
+.welcome-section a:hover {
+    color: var(--second-green);
+}
 
 
