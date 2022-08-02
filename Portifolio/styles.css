@@ -24,24 +24,27 @@ html {
     scroll-behavior: smooth;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 75em), (max-height: 26.87em) {
     html {
         font-size: 60%;
     }
 }
 
-@media (max-width: 61.25em) {
+@media (max-width: 61.25em), (max-height: 25em) {
     html {
         font-size: 58%;
     }
 }
 
-@media (max-width: 29.56em) {
+@media (max-width: 29.56em), (max-height: 21.56em) {
     html {
         font-size: 55%;
     }
     .welcome-section p {
         padding: 0 3px;
+    }
+    .welcome-section h1 {
+        padding-top: 30vh,
     }
 }
 
